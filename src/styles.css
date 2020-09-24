@@ -1,0 +1,136 @@
+.container {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  max-width: 630px;
+  border-radius: 19px;
+  margin: 20 auto;
+  padding: 20px;
+}
+.current-city {
+  padding-left: 35px;
+  margin-top: 30px;
+}
+.city {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: #f6f5f5;
+  margin: 0;
+  line-height: 70px;
+  margin-bottom: 15px;
+}
+
+.date-city {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-top: -5px;
+  margin-left: 8px;
+}
+.date-hours {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: -5px;
+  margin-left: 8px;
+}
+
+.button-submit,
+.search-bar {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: 2px;
+  border-radius: 5px;
+  border: white 1px solid;
+  background-color: #ace0f9;
+  color: #fff1eb;
+  margin-right: 5px;
+  margin-bottom: 1px;
+  padding: 5px;
+}
+
+::placeholder {
+  color: white;
+}
+.button-submit:hover {
+  cursor: pointer;
+}
+.button-current-geo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 2px;
+  border-radius: 5px;
+  border: #eaeef3 1px solid;
+  background-color: #eaeef3;
+  color: black;
+  padding: 6px 8px 6px 8px;
+}
+
+.temp-cf {
+  padding: 12px;
+  text-align: left;
+}
+
+.temp-currently {
+  font-size: 90px;
+  margin: 0;
+}
+.icon-weather i {
+  font-size: 120px;
+  margin-top: 25px;
+  padding-left: 10px;
+}
+
+.temp-measure {
+  font-size: 12px;
+  color: grey;
+  text-decoration-style: none;
+  position: relative;
+  top: -35px;
+  left: 155px;
+}
+
+.temp-sub {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: -20px;
+}
+.adicional-info {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.adicional-info li {
+  margin-bottom: 7px;
+  list-style: none;
+}
+
+.days-weather {
+  margin-top: 0;
+}
+
+.days-weather i {
+  font-size: 35px;
+}
+
+.weather-block {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  border: transparent;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  margin: 5px;
+  transition: all ease-in-out 250ms;
+}
+.weather-block:hover {
+  border: 1px solid white;
+}

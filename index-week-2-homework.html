@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0153fe8f87.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container col-6 mt-2">
+      <header>
+        <div class="row col-12 mt-2 ml-3">
+          <div class="current-city col-5">
+            <h2 class="city" id="city-name">Lisboa</h2>
+            <h5 class="date-city" id="date-city">Sunday 31 August</h5>
+            <h5 class="date-hours" id="date-hours"></h5>
+          </div>
+          <div class="city-form mt-3 ml-5 p-3 col-6">
+            <form id="search-form" class="search-form ml-4">
+              <div class="searching row p-3">
+                <input
+                  type="text"
+                  placeholder="Type a City ..."
+                  class="search-bar"
+                  id="search-text-input"
+                />
+                <input
+                  type="submit"
+                  value="Search"
+                  class="button-submit"
+                  id="button-submit"
+                />
+              </div>
+
+              <input
+                type="submit"
+                value="Current Location"
+                class="button-current-geo"
+                id="button-current-geo"
+              />
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="row weather-section ml-4 col-12">
+          <div class="icon-weather">
+            <i class="fas fa-cloud-moon"></i>
+          </div>
+          <div class="temp-cf col-3 mt-2">
+            <h1 class="temp-currently"><span id="temp-currently">19</span>º</h1>
+            <span class="temp-measure">
+              <a href="#" id="celsius-a1">Cº</a> |
+              <a href="#" id="farhen-a2">Fº</a></span
+            >
+
+            <h3 class="temp-sub" id="temp-sub">Partly Clouded</h3>
+          </div>
+
+          <div class="row adicional-info ml-4">
+            <div class="col-3">
+              <ul>
+                <li>
+                  <span id="high-temp">23</span>º <br />
+                  <strong> high</strong>
+                </li>
+
+                <li>
+                  <span id="min-temp">14</span>º <br />
+                  <strong>low</strong>
+                </li>
+              </ul>
+            </div>
+
+            <br />
+            <div class="ml-5">
+              <ul>
+                <li>
+                  <span id="humidity">86</span> %
+                  <br />
+                  <strong>humidity</strong>
+                </li>
+
+                <li>
+                  <span id="wind">10</span> km/h
+                  <br />
+                  <strong> wind</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="row days-weather col-12 ml-4 mt-4 mb-2">
+          <div class="weather-block col-sm-2">
+            <h5>Thursday</h5>
+            <br />
+            <i class="fas fa-cloud-showers-heavy"></i>
+            <br />
+            <br />
+            <h5><strong>19º</strong>/7º</h5>
+          </div>
+          <div class="weather-block col-sm-2">
+            <h5>Friday</h5>
+            <br />
+            <i class="fas fa-cloud-showers-heavy"></i>
+            <br />
+            <br />
+            <h5><strong>18º</strong>/9º</h5>
+          </div>
+          <div class="weather-block col-sm-2">
+            <h5>Saturday</h5>
+            <br />
+            <i class="fas fa-bolt"></i>
+            <br />
+            <br />
+            <h5><strong>24º</strong>/19º</h5>
+          </div>
+          <div class="weather-block col-sm-2">
+            <h5>Sunday</h5>
+            <br />
+            <i class="fas fa-sun"></i>
+            <br />
+            <br />
+            <h5><strong>26º/</strong>10º</h5>
+          </div>
+          <div class="weather-block col-sm-2">
+            <h5>Monday</h5>
+            <br />
+            <i class="fas fa-sun"></i>
+            <br />
+            <br />
+            <h5><strong>27º</strong>/11º</h5>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
