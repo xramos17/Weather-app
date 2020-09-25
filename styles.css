@@ -134,3 +134,9 @@
 .weather-block:hover {
   border: 1px solid white;
 }
+.footer-note {
+  font-family: "Roboto", sans-serif;
+  margin-top: 12px;
+  margin-left: 370px;
+  font-size: 12px;
+}
